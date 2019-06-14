@@ -13,17 +13,17 @@
 use App\Http\Middleware\ApiAuthMiddleware;
 
 
-// Route::get('/', function () {
-//     return 'hola mundo con holis holis laravel';
-// });
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
-// Route::get('/pruebas/{nombre?}',function($nombre=null){
-//     return "Hecho desde otra ruta".$nombre;
-// });
-// Route::get('/animales','PruebasController@index');
-// Route::get('/test-orm','PruebasController@testOrm');
+ Route::get('/', function () {
+     return 'hola mundo con holis holis laravel';
+ });
+ Route::get('/welcome', function () {
+     return view('welcome');
+ });
+ Route::get('/pruebas/{nombre?}',function($nombre=null){
+     return "Hecho desde otra ruta".$nombre;
+ });
+ Route::get('/animales','PruebasController@index');
+ Route::get('/test-orm','PruebasController@testOrm');
 
 // Rutas del controlador de usuario
 Route::post('/api/register','UserController@register');
